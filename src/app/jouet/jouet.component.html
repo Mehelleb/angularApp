@@ -1,0 +1,17 @@
+<div class="componentJouet">
+    <div class="nameImg">
+        <h2> {{ propsJouet.name }}</h2>
+        <div class="imgDiv">
+            <img [src]="propsJouet.imageUrl" alt="propsJouet.name">
+        </div>
+    </div>
+    <div class="divOthersElems">
+        <div class="othersElems">
+            <p>💞{{ propsJouet.description }}</p>
+            <h3>Âge: {{propsJouet.category}} ans</h3>
+            <h3>Prix: {{ propsJouet.price }} €</h3>
+            <p>Couleurs: {{ propsJouet.color }}</p>
+            <button>Like</button> {{ propsJouet.likes}}
+        </div>
+    </div>
+</div>
