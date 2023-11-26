@@ -17,7 +17,7 @@ export class ListeJouetComponent implements OnInit {
         category:2,
         price:24,
         color:"blanc/rose/bleu",
-        likes:120,
+        likes:250,
         imageUrl:"https://images.king-jouet.com/6/gu857365_6.jpg"
         },
         {
