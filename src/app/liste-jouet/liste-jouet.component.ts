@@ -11,6 +11,6 @@ export class ListeJouetComponent implements OnInit {
   jouets!:Jouet[];
   constructor(private serviceJouet: ServiceJouet){}
   ngOnInit(): void {
-    this.jouets = this.serviceJouet.jouets;
+    this.jouets = this.serviceJouet.getAllJouet();
   }
 }

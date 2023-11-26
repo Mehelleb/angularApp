@@ -26,4 +26,7 @@ export class ServiceJouet {
             imageUrl:"https://www.king-jouet.com/fstrz/r/s/images.king-jouet.com/6/gu860464_6.jpg"
             }
     ];
+    getAllJouet():Jouet[] {
+        return this.jouets;
+    }
 }
