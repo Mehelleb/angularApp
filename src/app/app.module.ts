@@ -6,13 +6,15 @@ import { JouetComponent } from './jouet/jouet.component';
 import { ListeJouetComponent } from './liste-jouet/liste-jouet.component';
 import { HeaderComponent } from './header/header.component';
 import { Rooting } from './rooting';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JouetComponent,
     ListeJouetComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
