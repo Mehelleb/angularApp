@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Jouet } from 'src/models/Jouet';
 
 @Component({
@@ -7,6 +7,17 @@ import { Jouet } from 'src/models/Jouet';
   styleUrls: ['./jouet.component.scss']
 })
 export class JouetComponent {
+  textButton:string = "Like";
   @Input() propsJouet!:Jouet;
+
+  onLike (): void {
+    if (this.textButton === "Like"){
+      this.propsJouet.likes++;
+      this.textButton = "Unlike"
+    } else if(this.textButton === "Unlike"){
+      this.propsJouet.likes--;
+      this.textButton = "Like"
+    }
+  }
 }
 

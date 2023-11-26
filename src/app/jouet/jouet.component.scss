@@ -6,6 +6,14 @@
     box-shadow: 5px 5px 10px #888888;
     margin: 10px;
 }
+.componentJouetLiked {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    width: 50%;
+    box-shadow: 5px 5px 10px green;
+    margin: 10px;
+}
 .nameImg {
     flex: 0.5;
     background-color: white;
