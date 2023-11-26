@@ -1,2 +1,1 @@
-<app-jouet [propsJouet]="licorne"></app-jouet>
-<app-jouet [propsJouet]="tortue"></app-jouet>
+<app-jouet *ngFor="let jouet of jouets" [propsJouet]="jouet"></app-jouet>
