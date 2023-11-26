@@ -4,6 +4,14 @@
     background-color: white;
     width: 50%;
     box-shadow: 5px 5px 10px #888888;
+    margin: 10px auto;
+}
+.componentJouetLiked {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    width: 50%;
+    box-shadow: 5px 5px 10px green;
     margin: 10px;
 }
 .nameImg {
@@ -26,4 +34,8 @@ img {
 }
 .imgDiv {
     text-align: center;
+}
+span {
+   
+    font-size: 20px;
 }
