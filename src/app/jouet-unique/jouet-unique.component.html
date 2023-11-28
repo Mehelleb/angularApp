@@ -1,5 +1,7 @@
+
 <div class="componentJouet" [ngClass]="{componentJouetLiked: textButton === 'Unlike'}">
     <div class="nameImg">
+        <button routerLink="/jouets">Retour</button>
         <h2> {{ propsJouet.name }}</h2>
         <div class="imgDiv">
             <img [src]="propsJouet.imageUrl" alt="propsJouet.name">
