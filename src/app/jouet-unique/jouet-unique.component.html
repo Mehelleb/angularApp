@@ -1,0 +1,17 @@
+<div class="componentJouet" [ngClass]="{componentJouetLiked: textButton === 'Unlike'}">
+    <div class="nameImg">
+        <h2> {{ propsJouet.name }}</h2>
+        <div class="imgDiv">
+            <img [src]="propsJouet.imageUrl" alt="propsJouet.name">
+        </div>
+    </div>
+    <div class="divOthersElems">
+        <div class="othersElems">
+            <p>💞{{ propsJouet.description }}</p>
+            <h3>Âge: {{propsJouet.category}} ans</h3>
+            <h3>Prix: {{ propsJouet.price }} €</h3>
+            <p>Couleurs: {{ propsJouet.color }}</p>
+            <button (click)="onLike()" >{{textButton}}</button> <span [ngStyle]="{color:'rgb(0, '+propsJouet.likes+', 0)'}"> {{ propsJouet.likes}}</span>
+        </div>
+    </div>
+</div>

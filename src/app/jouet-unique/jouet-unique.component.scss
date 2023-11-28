@@ -1,0 +1,41 @@
+.componentJouet {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    width: 50%;
+    box-shadow: 5px 5px 10px #888888;
+    margin: 10px auto;
+}
+.componentJouetLiked {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    width: 50%;
+    box-shadow: 5px 5px 10px green;
+    margin: 10px auto;
+}
+.nameImg {
+    flex: 0.5;
+    background-color: white;
+}
+h2 {
+    text-align: center;
+}
+.divOthersElems {
+    flex: 0.5;
+}
+.othersElems {
+    text-align: center;
+    margin-top: 20%;
+}
+img {
+    width: 70%;
+    height: 70%;
+}
+.imgDiv {
+    text-align: center;
+}
+span {
+   
+    font-size: 20px;
+}
