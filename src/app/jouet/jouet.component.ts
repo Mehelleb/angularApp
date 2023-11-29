@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Jouet } from 'src/models/Jouet';
 import { ServiceJouet } from '../services/serviceJouet';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-jouet',
@@ -8,7 +9,7 @@ import { ServiceJouet } from '../services/serviceJouet';
   styleUrls: ['./jouet.component.scss']
 })
 export class JouetComponent {
-  constructor(private serviceJouet: ServiceJouet){}
+  constructor(private serviceJouet: ServiceJouet, private router: Router){}
   textButton:string = "Like";
   @Input() propsJouet!:Jouet;
 
@@ -20,6 +21,10 @@ export class JouetComponent {
       this.serviceJouet.onLikeJouetById(this.propsJouet.id, 'Unlike')
       this.textButton = "Like"
     }
+  }
+
+  onView():void{
+    this.router.navigateByUrl(`jouet/${this.propsJouet.id}`);
   }
 }
 

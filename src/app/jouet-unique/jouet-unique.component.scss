@@ -12,7 +12,7 @@
     background-color: white;
     width: 50%;
     box-shadow: 5px 5px 10px green;
-    margin: 10px;
+    margin: 10px auto;
 }
 .nameImg {
     flex: 0.5;
@@ -40,11 +40,11 @@ span {
     font-size: 20px;
 }
 button {
-    font-size: 30px;
-    background-color: pink;
-    box-shadow: 5px 5px 10px #888888;
+    font-size: 20px;
+    background-color: rgb(52, 220, 40);
     padding-left: 30px;
     padding-right: 30px;
-    border-radius: 20px;
+ 
 
 }
+    
